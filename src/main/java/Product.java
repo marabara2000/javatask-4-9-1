@@ -13,18 +13,18 @@ public class Product {
     }
 
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Product product = (Product) o;
-        return id == product.id && price == product.price && title.equals(product.title);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, title, price);
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        Product product = (Product) o;
+//        return id == product.id && price == product.price && title.equals(product.title);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(id, title, price);
+//    }
 
     public int getId() {
         return id;
